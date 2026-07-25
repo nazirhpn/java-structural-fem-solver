@@ -1,43 +1,67 @@
-# Object-Oriented Structural FEM Solver
+# Object-Oriented Structural FEM Solver in Java
 
-A Java-based finite-element program for the analysis of spatial truss structures, developed as part of the M.Sc. Computational Engineering program at Ruhr University Bochum.
+An academic finite-element program for the analysis and visualization of spatial truss structures, developed during the M.Sc. Computational Engineering program at Ruhr University Bochum.
 
 ## Overview
 
-The program implements the main stages of a structural finite-element workflow:
+The program implements an object-oriented workflow for structural finite-element analysis, including:
 
-- object-oriented model and mesh representation
+- representation of nodes, elements, forces and constraints
 - global stiffness-matrix assembly
-- boundary-condition application
-- linear-system solution
-- displacement and member-force evaluation
-- benchmark verification
+- application of boundary conditions
+- solution of the structural system
+- displacement and structural-response evaluation
+- visualization of three-dimensional truss structures
+- verification using benchmark and example models
+
+## Project Structure
+
+- `src/fem/` – core finite-element and solver classes
+- `src/model/` – example structural models
+- `src/test/` – tests and demonstration cases
+- `images/` – selected visualizations of example structures
+
+## Example Models
+
+The repository includes several example structures:
+
+- dome structure
+- lattice cube
+- tetrahedral structure
+- tower structure
+- truss bridge
 
 ## Technologies
 
 - Java
 - Object-oriented programming
 - Finite Element Method
-- Linear algebra
+- Structural mechanics
+- Numerical linear algebra
 
-## Repository Structure
+## Example Results
 
-- `src/` – Java source code
-- `examples/` – benchmark models
-- `results/` – selected outputs
-- `docs/` – diagrams and supporting documentation
+### Truss Bridge
+
+![Truss bridge](images/trussbridge_3dview.png)
+
+### Dome Structure
+
+![Dome structure](images/domestructure_3dview.png)
+
+### Lattice Cube
+
+![Lattice cube](images/latticecube_3dview.png)
 
 ## Running the Project
 
-1. Install Java [version].
-2. Compile the files in `src/`.
-3. Run the main application using [exact command].
-4. Select or provide an example input model.
+1. Clone or download the repository.
+2. Open the project in a Java IDE.
+3. Compile the source files inside `src/`.
+4. Run one of the example or test classes.
 
-## Verification
+Exact execution instructions depend on the Java version and project configuration.
 
-The implementation was checked using benchmark spatial-truss examples. Add a brief table showing expected and calculated values.
+## Scope and Limitations
 
-## Limitations
-
-This is an academic solver intended for educational and verification purposes. It is not commercial structural-analysis software.
+This is an academic finite-element solver developed for learning, implementation and benchmark verification. It is not intended as a replacement for commercial structural-analysis software.
